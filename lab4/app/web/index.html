@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="uk">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Картки з конспекту · Лабораторна 4</title><link rel="stylesheet" href="app.css"></head>
+<body><main>
+<header><span class="eyebrow">ЛАБОРАТОРНА 4 · ЛОКАЛЬНІ МОДЕЛІ</span><nav><a aria-current="page" href="index.html">Картки</a><a href="bench.html">Навантажувальний тест ↗</a></nav></header>
+<section class="intro"><h1>З конспекту —<br>у запитання й відповіді.</h1><p>Вставте фрагмент лекції та створіть картки для повторення.<br>Кожна відповідь має цитату з вашого тексту.</p></section>
+<div class="workspace">
+<section class="panel"><div class="section-title"><h2>01 / Навчальний текст</h2><button id="sample" class="link" type="button">Спробувати приклад</button></div>
+<label for="source" class="sr-only">Текст лекції або конспекту</label><textarea id="source" maxlength="3000" placeholder="Вставте текст лекції, конспект або уривок підручника…" rows="12"></textarea>
+<div class="under-input"><label class="file-button">Відкрити TXT / MD<input id="file" type="file" accept=".txt,.md,text/plain,text/markdown"></label><span id="counter">0 / 3000</span></div>
+<div class="settings"><label>Модель<select id="model"><option value="lab4-qa-q8:latest">Qwen3 4B · Q8 · краща якість</option><option value="lab4-qa-q4:latest">Qwen3 4B · Q4 · швидше</option></select></label><label>Карток<select id="count"><option>2</option><option selected>4</option><option>6</option><option>8</option></select></label></div>
+<button id="generate" class="primary" type="button">Створити картки <span>→</span></button><p id="status" role="status" aria-live="polite">Готово до роботи. Усі обчислення — на вашому комп’ютері.</p></section>
+<section class="panel results-panel"><div class="section-title"><h2>02 / Картки для повторення</h2><span class="badge" id="card-count">0 карток</span></div><div id="cards"><div class="empty"><span>Q / A</span><h3>Тут з’являться ваші картки</h3><p>Додайте текст і натисніть «Створити картки».</p></div></div><div class="exports"><button id="json" disabled type="button">Зберегти JSON ↓</button><button id="csv" disabled type="button">Зберегти CSV ↓</button></div></section>
+</div><footer><span><i></i> Ollama · OpenAI-сумісний API · без хмарних запитів</span><span>Цитата перевіряється автоматично. Зміст картки перевірте самостійно.</span></footer>
+</main><script type="module" src="app.js"></script></body></html>

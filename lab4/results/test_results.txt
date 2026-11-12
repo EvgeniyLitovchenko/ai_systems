@@ -1,0 +1,17 @@
+test_bad_json_and_schema (__main__.ContractTests.test_bad_json_and_schema) ... ok
+test_connection_error (__main__.ContractTests.test_connection_error) ... ok
+test_csv_round_trip (__main__.ContractTests.test_csv_round_trip) ... ok
+test_duplicate (__main__.ContractTests.test_duplicate) ... ok
+test_empty_and_large_input (__main__.ContractTests.test_empty_and_large_input) ... ok
+test_fake_evidence (__main__.ContractTests.test_fake_evidence) ... ok
+test_http_error (__main__.ContractTests.test_http_error) ... ok
+test_limit (__main__.ContractTests.test_limit) ... ok
+test_no_facts (__main__.ContractTests.test_no_facts) ... ok
+test_timeout (__main__.ContractTests.test_timeout) ... ok
+test_truncation (__main__.ContractTests.test_truncation) ... ok
+test_valid (__main__.ContractTests.test_valid) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+OK

@@ -1,0 +1,17 @@
+{
+  "bench.py": {
+    "sha256": "d7b351d9ea99b53eccffe7629fccfd992c202085b3fc28939d73b4b0486cc18e",
+    "unchanged": true
+  },
+  "client.js": {
+    "sha256": "198ee3a7cdb836ba5dbe858da1c418274111c6ad582267a552d265c0fd150d71",
+    "unchanged": true
+  },
+  "style.css": {
+    "sha256": "d973e0a7eb6b9f98f51ae2be4237ba620242e3de6d689eb8f2bcb8ff9fd997e0",
+    "unchanged": true
+  },
+  "bench.html": {
+    "changes": "navigation link, initial local proxy URL, initial Q8 model only; measurement code unchanged"
+  }
+}

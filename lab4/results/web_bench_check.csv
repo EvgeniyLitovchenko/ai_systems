@@ -1,0 +1,2 @@
+label,model,concurrency,requests,errors,ttft_p50_s,ttft_p95_s,tokens_per_s_per_user_p50,throughput_tokens_per_s,reasoning
+web-check,lab4-qa-q8:latest,1,2,0,0.051,0.056,96.8,88.1,false

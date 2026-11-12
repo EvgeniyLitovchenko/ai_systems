@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Навантажувальний тест</title>
+<link rel="stylesheet" href="style.css">
+<!--
+  Відкривайте через локальний сервер, а не з диска, інакше браузер заблокує запити (CORS):
+      python -m http.server 8000 --bind 127.0.0.1      (у цій теці)
+      http://localhost:8000/bench.html
+-->
+</head>
+<body>
+<main>
+  <h1>Навантажувальний тест</h1>
+  <nav><a href="index.html">Картки з конспекту</a> · Навантажувальний тест</nav>
+  <div id="banner">Сторінку відкрито з диска, тож браузер заблокує запити до сервера (CORS). Запустіть у цій теці
+    <code>python -m http.server 8000 --bind 127.0.0.1</code> і відкрийте <code>http://localhost:8000/bench.html</code>.</div>
+  <details class="settings" open>
+    <summary>Налаштування</summary>
+    <div class="grid">
+      <label>Протокол 
+        <select id="api">
+          <option value="openai">OpenAI-сумісний (будь-який рантайм)</option>
+          <option value="ollama">Ollama (рідний API)</option>
+        </select></label>
+      <label>Адреса API <input id="baseUrl" value="http://localhost:8000/v1" placeholder="http://localhost:8000/v1"></label>
+      <label>Модель <input id="model" list="models" value="lab4-qa-q8:latest" placeholder="lab4-qa-q8:latest"><datalist id="models"></datalist></label>
+      <label>API-ключ <input id="apiKey" type="password" placeholder="локально не потрібен"></label>
+      <label>Міркування 
+        <select id="reasoningEffort">
+          <option value="none">без міркування</option>
+          <option value="">як у моделі за замовчуванням</option>
+          <option value="low">low</option>
+          <option value="medium">medium</option>
+          <option value="high">high</option>
+        </select></label>
+      <label>Макс. токенів відповіді <input id="maxTokens" type="number" min="1" placeholder="200"></label>
+      <label>Temperature <input id="temperature" type="number" min="0" max="2" step="0.1"></label>
+      <label>Top-p <input id="topP" type="number" min="0" max="1" step="0.05"></label>
+      <label>Seed <input id="seed" type="number" placeholder="випадковий"></label>
+      <label class="ollama-only">Top-k <input id="topK" type="number" min="1"></label>
+      <label class="ollama-only">Розмір контексту, токенів <input id="numCtx" type="number" min="256" step="256"></label>
+    </div>
+    <p class="hint">Порожнє поле — значення за замовчуванням, показане в ньому сірим. Для Ollama це справжні значення моделі. Top-k і розмір контексту можна задати лише через рідний
+      API Ollama: в OpenAI-сумісному API таких параметрів немає. У рідному API Ollama low/medium/high означають просто «з міркуванням».</p>
+  </details>
+  <details class="settings" open>
+    <summary>Навантаження</summary>
+    <div class="grid">
+      <label>Паралельних клієнтів <input id="levels" value="1, 2, 4" placeholder="1, 2, 4"></label>
+      <label>Запитів на кожен рівень <input id="requests" type="number" min="1" value="16" placeholder="16"></label>
+      <label>Таймаут запиту, с <input id="timeout" type="number" min="1" value="120" placeholder="120"></label>
+      <label>Назва запуску <input id="label" placeholder="напр. до оптимізації"></label>
+      <label class="wide">Промпти, по одному на рядок <textarea id="prompts" rows="6">Яка столиця Австралії?
+Поясни в трьох реченнях, що таке квантизація моделі.
+Напиши короткий лист викладачеві з проханням перенести здачу лабораторної на тиждень.
+Explain in two sentences why the sky is blue.
+Склади план підготовки до іспиту з програмування на 5 днів.
+Write a Python function that checks whether a string is a palindrome.
+Перелічи три переваги й три недоліки локального запуску моделей.
+Translate into Ukrainian: The meeting has been moved to Thursday.</textarea></label>
+    </div>
+    <p class="hint">Назва запуску потрапляє в таблицю й CSV, щоб порівнювати запуски, наприклад до й після оптимізації. Наведіть курсор на заголовок колонки таблиці, щоб побачити, що вона означає. Браузер тримає не більше ~6 одночасних зʼєднань з одним сервером, тож рівні понад 6 клієнтів тут не покажуть
+      справжнього навантаження — для них використовуйте <code>bench.py</code>.</p>
+  </details>
+  <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <button id="run">Запустити</button>
+    <button id="stop" class="secondary" disabled>Зупинити</button>
+    <button id="download" class="secondary" disabled>Завантажити CSV</button>
+    <button id="clear" class="secondary">Очистити результати</button>
+  </div>
+  <div id="status" class="hint"></div>
+  <table>
+    <thead>
+      <tr>
+        <th title="Назва, яку ви дали запуску, — щоб відрізнити, наприклад, запуски до й після оптимізації">Назва запуску</th>
+        <th title="Скільки клієнтів одночасно надсилали запити">Клієнтів</th>
+        <th title="Скільки запитів завершилися помилкою або таймаутом">Помилок</th>
+        <th title="Скільки тривав увесь рівень — від першого до останнього запиту">Тривалість, с</th>
+        <th title="Скільки токенів у середньому згенерувала модель на один запит">Токенів на запит</th>
+        <th title="Медіана часу до першого токена: скільки користувач чекає на початок відповіді, разом із чергою">TTFT p50, с</th>
+        <th title="95-й перцентиль часу до першого токена: так довго чекає кожен двадцятий, найповільніший користувач">TTFT p95, с</th>
+        <th title="Медіана швидкості, з якою один користувач бачить, як «друкується» його відповідь (після першого токена)">Швидкість для користувача, tokens/s</th>
+        <th title="Скільки токенів за секунду сервер видає всім користувачам разом">Throughput, tokens/s</th>
+      </tr>
+    </thead>
+    <tbody id="results"></tbody>
+  </table>
+  <p id="reasoningWarning" class="warning" style="display: none;">Модель міркувала перед відповіддю: TTFT включає час
+    міркування, а tokens/s завищений. Оберіть «без міркування».</p>
+</main>
+<script type="module">
+import { listModels, modelDefaults, persistFields, readSettings, syncOllamaOnlyFields } from "./client.js";
+
+const $ = (id) => document.getElementById(id);
+const SETTING_IDS = ["api", "baseUrl", "apiKey", "model", "reasoningEffort", "maxTokens", "temperature", "topP", "seed", "topK", "numCtx"];
+
+if (location.protocol === "file:") $("banner").style.display = "block";
+
+async function refreshModels() {
+  try {
+    $("models").replaceChildren(...(await listModels(readSettings())).map((name) => new Option(name)));
+  } catch {}  // сервер може бути ще не запущений — список просто лишиться порожнім
+}
+// Показує в порожніх полях значення, які візьме модель (лише для Ollama; для інших рантаймів поля лишаються порожніми)
+async function showModelDefaults() {
+  const d = await modelDefaults(readSettings());
+  $("temperature").placeholder = d?.temperature ?? "";
+  $("topP").placeholder = d?.top_p ?? "";
+  $("topK").placeholder = d?.top_k ?? "";
+  $("numCtx").placeholder = d?.loadedContext ?? "";
+}
+$("api").addEventListener("change", () => { syncOllamaOnlyFields(); refreshModels(); showModelDefaults(); });
+$("baseUrl").addEventListener("change", () => { refreshModels(); showModelDefaults(); });
+$("model").addEventListener("change", showModelDefaults);
+import { percentile, streamChat } from "./client.js";
+
+persistFields("bench-settings", [...SETTING_IDS, "levels", "requests", "timeout", "label", "prompts"]);
+syncOllamaOnlyFields();
+refreshModels();
+showModelDefaults();
+
+const rows = [];
+let controller = null;
+
+// Ті самі колонки, що й у CSV від bench.py, тож результати можна порівнювати
+const CSV_COLUMNS = ["label", "model", "concurrency", "requests", "errors", "ttft_p50_s", "ttft_p95_s",
+                     "tokens_per_s_per_user_p50", "throughput_tokens_per_s", "reasoning"];
+
+async function runLevel(cfg, prompts, concurrency, total, timeoutMs, signal) {
+  const results = [], errors = [];
+  let next = 0;
+  const start = performance.now();
+  // concurrency «клієнтів» одночасно беруть наступний запит із черги, поки запити не закінчаться
+  async function client() {
+    while (next < total && !signal.aborted) {
+      const prompt = prompts[next++ % prompts.length];
+      // Таймаут обриває запит, якщо модель зациклилась і генерує без кінця; такий запит рахуємо як помилку
+      const requestSignal = AbortSignal.any([signal, AbortSignal.timeout(timeoutMs)]);
+      try {
+        results.push(await streamChat(cfg, [{ role: "user", content: prompt }], undefined, requestSignal));
+      } catch (error) {
+        if (signal.aborted) continue;  // користувач натиснув «Зупинити»
+        const timedOut = requestSignal.reason?.name === "TimeoutError";
+        errors.push(timedOut ? new Error(`таймаут ${timeoutMs / 1000} с`) : error);
+      }
+      $("status").textContent = `${concurrency} клієнтів: виконано ${results.length + errors.length} з ${total}`;
+    }
+  }
+  await Promise.all(Array.from({ length: concurrency }, client));
+  const wall = (performance.now() - start) / 1000;
+  if (!results.length) {
+    throw new Error(`усі ${total} запитів для ${concurrency} клієнтів завершилися помилкою (${errors.at(-1)?.message})`);
+  }
+  const speeds = results.map((r) => r.tokensPerS).filter(Boolean);
+  const round = (value, digits) => Number(value.toFixed(digits));  // як у bench.py
+  return {
+    label: $("label").value.trim(),
+    model: cfg.model,
+    concurrency,
+    requests: total,
+    errors: errors.length,
+    ttft_p50_s: round(percentile(results.map((r) => r.ttft), 50), 3),
+    ttft_p95_s: round(percentile(results.map((r) => r.ttft), 95), 3),
+    tokens_per_s_per_user_p50: speeds.length ? round(percentile(speeds, 50), 1) : null,
+    throughput_tokens_per_s: round(results.reduce((sum, r) => sum + (r.tokens || 0), 0) / wall, 1),
+    reasoning: results.some((r) => r.reasoning),
+    // лише для таблиці на сторінці; у CSV не потрапляють, щоб колонки збігалися з bench.py
+    duration_s: wall,
+    tokens_per_request: results.reduce((sum, r) => sum + (r.tokens || 0), 0) / results.length,
+  };
+}
+
+function addRow(row) {
+  const tr = document.createElement("tr");
+  const cells = [row.label || "—", row.concurrency, row.errors, row.duration_s.toFixed(1), row.tokens_per_request.toFixed(0),
+                 row.ttft_p50_s.toFixed(2), row.ttft_p95_s.toFixed(2),
+                 row.tokens_per_s_per_user_p50?.toFixed(1) ?? "—", row.throughput_tokens_per_s.toFixed(1)];
+  for (const value of cells) tr.append(Object.assign(document.createElement("td"), { textContent: value }));
+  $("results").append(tr);
+  if (row.reasoning) $("reasoningWarning").style.display = "block";
+}
+
+$("run").addEventListener("click", async () => {
+  const cfg = readSettings();
+  cfg.maxTokens ??= 200;
+  const timeoutMs = (Number($("timeout").value) || 120) * 1000;
+  const levels = ($("levels").value || $("levels").placeholder).split(/[\s,]+/).map(Number).filter((n) => n > 0);
+  const total = Number($("requests").value) || 16;
+  const prompts = $("prompts").value.split("\n").map((p) => p.trim()).filter(Boolean);
+  controller = new AbortController();
+  $("run").disabled = true;
+  $("stop").disabled = false;
+  try {
+    $("status").textContent = "Прогрів: перший запит включає завантаження моделі, його не враховуємо…";
+    await streamChat(cfg, [{ role: "user", content: "Привіт!" }], undefined, controller.signal);
+    for (const concurrency of levels) {
+      if (controller.signal.aborted) break;
+      const row = await runLevel(cfg, prompts, concurrency, total, timeoutMs, controller.signal);
+      rows.push(row);
+      addRow(row);
+    }
+    $("status").textContent = controller.signal.aborted ? "Зупинено." : "Готово.";
+  } catch (error) {
+    $("status").textContent = controller.signal.aborted ? "Зупинено." : `Помилка: ${error.message}`;
+  }
+  $("run").disabled = false;
+  $("stop").disabled = true;
+  $("download").disabled = !rows.length;
+});
+
+$("stop").addEventListener("click", () => controller?.abort());
+
+$("download").addEventListener("click", () => {
+  const csv = [CSV_COLUMNS.join(","), ...rows.map((row) => CSV_COLUMNS.map((c) => row[c] ?? "").join(","))].join("\n");
+  const link = Object.assign(document.createElement("a"), {
+    href: URL.createObjectURL(new Blob([csv + "\n"], { type: "text/csv" })),
+    download: "bench_results.csv",
+  });
+  link.click();
+});
+
+$("clear").addEventListener("click", () => {
+  rows.length = 0;
+  $("results").replaceChildren();
+  $("reasoningWarning").style.display = "none";
+  $("download").disabled = true;
+});
+</script>
+</body>
+</html>
