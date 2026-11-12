@@ -1,0 +1,9 @@
+section,model,n_layers,eval_interval,val_loss,best_step,seconds,eval_seconds,parameters,threshold,accuracy
+mini-GPT,minigpt_v1,2.0,50.0,6.745116710662842,500.0,14.405588178000016,2.5635346479996315,1950320,,
+mini-GPT,minigpt_v2,4.0,50.0,6.673008680343628,500.0,18.46579289400006,1.9625961359997746,2346096,,
+mini-GPT,minigpt_v1_eval250,2.0,250.0,6.745116710662842,500.0,9.151973805000011,0.3850252699999146,1950320,,
+sentiment,cardiffnlp/twitter-xlm-roberta-base-sentiment,,,,,0.08364737700003388,,278045955,0.5,1.0
+sentiment,nlptown/bert-base-multilingual-uncased-sentiment,,,,,0.07981902200003788,,167360261,0.5,0.95
+sentiment,cardiffnlp/twitter-xlm-roberta-base-sentiment,,,,,0.08364737700003388,,278045955,0.35,1.0
+sentiment,cardiffnlp/twitter-xlm-roberta-base-sentiment,,,,,0.08364737700003388,,278045955,0.6,1.0
+sentiment,cardiffnlp/twitter-xlm-roberta-base-sentiment,,,,,0.08364737700003388,,278045955,0.75,1.0
