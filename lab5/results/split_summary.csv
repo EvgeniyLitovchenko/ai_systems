@@ -1,0 +1,4 @@
+split,total,ham,spam
+train,3611,3162,449
+validation,774,677,97
+test,774,678,96

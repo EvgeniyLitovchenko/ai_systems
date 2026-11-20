@@ -1,0 +1,5 @@
+text,predicted,prob_spam
+Are you free tonight?,ham,0.016482
+Free prize! Text WIN now to claim your reward.,spam,0.99892044
+I won a prize at school today.,ham,0.0026834395
+You won a prize! Call 09001234567 to claim now.,spam,0.9991474

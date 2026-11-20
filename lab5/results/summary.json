@@ -1,0 +1,75 @@
+{
+  "environment": {
+    "python": "3.13.12",
+    "torch": "2.9.1+cu128",
+    "transformers": "4.57.1",
+    "accelerate": "1.11.0",
+    "gpu": "NVIDIA GeForce RTX 5070",
+    "cuda": "12.8",
+    "seed": 42,
+    "max_length": 128
+  },
+  "data": {
+    "url": "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip",
+    "sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+    "raw_rows": 5574,
+    "clean_rows": 5159,
+    "removed_rows": 415,
+    "normalization_conflict_groups": 0,
+    "token_conflict_groups": 0,
+    "model_id": "google-bert/bert-base-uncased",
+    "model_revision": "86b5e0934494bd15c9632b12f734a8a67f723594"
+  },
+  "training": {
+    "seconds": 44.190906600000744,
+    "peak_allocated_gib": 2.2523980140686035,
+    "peak_reserved_gib": 2.544921875,
+    "best_validation_loss": 0.03483724966645241,
+    "completed_epochs": 3.0,
+    "global_steps": 678,
+    "learning_rate": 2e-05,
+    "batch_size": 16,
+    "max_epochs": 3,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "early_stopping_patience": 1,
+    "best_checkpoint": "checkpoint-452"
+  },
+  "test_metrics": {
+    "Majority baseline": {
+      "accuracy": 0.875968992248062,
+      "precision_spam": 0.0,
+      "recall_spam": 0.0,
+      "f1_spam": 0.0,
+      "macro_f1": 0.4669421487603306
+    },
+    "BERT before": {
+      "accuracy": 0.22609819121447028,
+      "precision_spam": 0.1274074074074074,
+      "recall_spam": 0.8958333333333334,
+      "f1_spam": 0.2230869001297017,
+      "macro_f1": 0.2260865646079654
+    },
+    "TF-IDF + LR": {
+      "accuracy": 0.962532299741602,
+      "precision_spam": 1.0,
+      "recall_spam": 0.6979166666666666,
+      "f1_spam": 0.8220858895705522,
+      "macro_f1": 0.9005736307058537
+    },
+    "BERT after": {
+      "accuracy": 0.9961240310077519,
+      "precision_spam": 0.9696969696969697,
+      "recall_spam": 1.0,
+      "f1_spam": 0.9846153846153847,
+      "macro_f1": 0.9911990448575815
+    }
+  },
+  "confusion_matrix": {
+    "tn": 675,
+    "fp": 3,
+    "fn": 0,
+    "tp": 96
+  },
+  "overfitting_signal": true
+}

@@ -1,0 +1,11 @@
+text,expected,predicted,prob_spam,correct
+Congratulations! You won a cash prize. Call this number now to claim it.,spam,spam,0.95888567,True
+URGENT! Claim your free reward by texting WIN to 80001.,spam,spam,0.9994986,True
+Exclusive offer! Get a free holiday voucher. Reply YES now.,spam,spam,0.9990728,True
+Your number was selected for a prize. Call our premium line today.,spam,spam,0.97622,True
+Win cash today! Text LUCKY to 80002. Subscription charges apply.,spam,spam,0.99954,True
+Can you pick me up at the station at six?,ham,ham,0.004573864,True
+Please call me when you get home.,ham,ham,0.0014664584,True
+Happy birthday! Hope you have a wonderful day.,ham,ham,0.0016166501,True
+Are you free for lunch tomorrow?,ham,ham,0.032867983,True
+I won the game! See you after class.,ham,ham,0.003004343,True

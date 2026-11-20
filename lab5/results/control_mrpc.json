@@ -1,0 +1,98 @@
+{
+  "dataset": "MRPC",
+  "epochs": 6,
+  "seconds": 47.448644899999636,
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "validation_history": [
+    {
+      "eval_loss": 0.37893176078796387,
+      "eval_accuracy": 0.8504901960784313,
+      "eval_f1": 0.8950086058519794,
+      "eval_runtime": 0.1636,
+      "eval_samples_per_second": 2493.594,
+      "eval_steps_per_second": 42.782,
+      "epoch": 1.0,
+      "step": 230
+    },
+    {
+      "eval_loss": 0.4408455193042755,
+      "eval_accuracy": 0.8308823529411765,
+      "eval_f1": 0.8870703764320785,
+      "eval_runtime": 0.1503,
+      "eval_samples_per_second": 2713.972,
+      "eval_steps_per_second": 46.563,
+      "epoch": 2.0,
+      "step": 460
+    },
+    {
+      "eval_loss": 0.501833438873291,
+      "eval_accuracy": 0.8480392156862745,
+      "eval_f1": 0.8838951310861424,
+      "eval_runtime": 0.1504,
+      "eval_samples_per_second": 2713.344,
+      "eval_steps_per_second": 46.552,
+      "epoch": 3.0,
+      "step": 690
+    },
+    {
+      "eval_loss": 0.6071652173995972,
+      "eval_accuracy": 0.8504901960784313,
+      "eval_f1": 0.8927943760984183,
+      "eval_runtime": 0.1545,
+      "eval_samples_per_second": 2641.184,
+      "eval_steps_per_second": 45.314,
+      "epoch": 4.0,
+      "step": 920
+    },
+    {
+      "eval_loss": 0.6956517696380615,
+      "eval_accuracy": 0.8553921568627451,
+      "eval_f1": 0.8977469670710572,
+      "eval_runtime": 0.1448,
+      "eval_samples_per_second": 2818.316,
+      "eval_steps_per_second": 48.353,
+      "epoch": 5.0,
+      "step": 1150
+    },
+    {
+      "eval_loss": 0.7026331424713135,
+      "eval_accuracy": 0.8602941176470589,
+      "eval_f1": 0.9008695652173913,
+      "eval_runtime": 0.1509,
+      "eval_samples_per_second": 2704.151,
+      "eval_steps_per_second": 46.395,
+      "epoch": 6.0,
+      "step": 1380
+    }
+  ],
+  "own_pairs": [
+    {
+      "sentence1": "The lecture starts at nine.",
+      "sentence2": "The class begins at 9 a.m.",
+      "expected": 1,
+      "predicted": 1,
+      "probability_paraphrase": 0.9946255087852478
+    },
+    {
+      "sentence1": "He sold his old bike.",
+      "sentence2": "He bought a new bicycle.",
+      "expected": 0,
+      "predicted": 1,
+      "probability_paraphrase": 0.9987257122993469
+    },
+    {
+      "sentence1": "The meeting was cancelled.",
+      "sentence2": "The meeting will not take place.",
+      "expected": 1,
+      "predicted": 1,
+      "probability_paraphrase": 0.9958337545394897
+    },
+    {
+      "sentence1": "The shop opens on Sunday.",
+      "sentence2": "The shop is closed on Sunday.",
+      "expected": 0,
+      "predicted": 1,
+      "probability_paraphrase": 0.9976357221603394
+    }
+  ]
+}

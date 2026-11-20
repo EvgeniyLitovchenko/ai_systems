@@ -1,0 +1,4 @@
+source_id,text,label_name,majority,BERT_before,TFIDF_LR,BERT_after,prob_spam_after,error_type,wrong_confidence
+1506,Total video converter free download type this in google search:),ham,0,1,0,1,0.9976172,false positive,0.9976172
+4225,Double eviction this week - Spiral and Michael and good riddance to them!,ham,0,0,0,1,0.97587764,false positive,0.97587764
+4210,I want kfc its Tuesday. Only buy 2 meals ONLY 2. No gravy. Only 2 Mark. 2!,ham,0,1,0,1,0.8017807,false positive,0.8017807
