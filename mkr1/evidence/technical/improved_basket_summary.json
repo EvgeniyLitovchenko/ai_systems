@@ -1,0 +1,448 @@
+{
+  "scope": "Борщ і тушкована капуста; технічна перевірка після відгуку користувача",
+  "origin": "technical_check_of_improved_user_session",
+  "stores": {
+    "atb": {
+      "found": 12,
+      "priced": 12,
+      "total_items": 15,
+      "basket_estimate_uah": 216.97,
+      "missing": [
+        "куряче стегно без кістки та шкіри",
+        "ребра свинячі",
+        "мелений духмяний перець"
+      ],
+      "unpriced": [],
+      "items": [
+        {
+          "ingredient": "буряк",
+          "product": "Буряк 1 гат",
+          "price": 13.89,
+          "price_unit": "кг",
+          "url": "https://www.atbmarket.com/product/burak-1-gat",
+          "estimate": {
+            "purchase_cost": 11.11,
+            "recipe_cost_min": 1.39,
+            "recipe_cost_max": 11.11,
+            "purchase_quantity": 0.8,
+            "note": "Покупка розрахована за верхньою межею діапазону. Перевірте позначену кількість або альтернативу.",
+            "approximate": true,
+            "purchase_label": "0.8 кг"
+          }
+        },
+        {
+          "ingredient": "капуста",
+          "product": "Капуста",
+          "price": 13.95,
+          "price_unit": "кг",
+          "url": "https://www.atbmarket.com/product/kapusta-1-gat",
+          "estimate": {
+            "purchase_cost": 19.53,
+            "recipe_cost_min": 18.83,
+            "recipe_cost_max": 19.53,
+            "purchase_quantity": 1.4,
+            "note": "Покупка розрахована за верхньою межею діапазону. Перевірте позначену кількість або альтернативу.",
+            "approximate": true,
+            "purchase_label": "1.4 кг"
+          }
+        },
+        {
+          "ingredient": "картопля",
+          "product": "Картопля",
+          "price": 14.49,
+          "price_unit": "кг",
+          "url": "https://www.atbmarket.com/product/kartopla-1-gat",
+          "estimate": {
+            "purchase_cost": 11.59,
+            "recipe_cost_min": 5.22,
+            "recipe_cost_max": 11.59,
+            "purchase_quantity": 0.8,
+            "note": "Покупка розрахована за верхньою межею діапазону. Перевірте позначену кількість або альтернативу.",
+            "approximate": true,
+            "purchase_label": "0.8 кг"
+          }
+        },
+        {
+          "ingredient": "морква",
+          "product": "Морква",
+          "price": 14.89,
+          "price_unit": "кг",
+          "url": "https://www.atbmarket.com/product/morkva-1gat",
+          "estimate": {
+            "purchase_cost": 4.47,
+            "recipe_cost_min": 1.79,
+            "recipe_cost_max": 3.57,
+            "purchase_quantity": 0.3,
+            "note": "Покупка розрахована за верхньою межею діапазону. Перевірте позначену кількість або альтернативу.",
+            "approximate": true,
+            "purchase_label": "0.3 кг"
+          }
+        },
+        {
+          "ingredient": "цибуля",
+          "product": "Цибуля Ріпчаста",
+          "price": 17.59,
+          "price_unit": "кг",
+          "url": "https://www.atbmarket.com/product/cibula-ripcasta-1-gat",
+          "estimate": {
+            "purchase_cost": 7.04,
+            "recipe_cost_min": 3.52,
+            "recipe_cost_max": 6.33,
+            "purchase_quantity": 0.4,
+            "note": "Покупка розрахована за верхньою межею діапазону. Перевірте позначену кількість або альтернативу.",
+            "approximate": true,
+            "purchase_label": "0.4 кг"
+          }
+        },
+        {
+          "ingredient": "часник",
+          "product": "Часник 20г Своя лінія гранульований",
+          "price": 12.5,
+          "price_unit": "уп.",
+          "url": "https://www.atbmarket.com/product/casnik-20g-svoa-linia-granulovanij",
+          "estimate": {
+            "purchase_cost": 12.5,
+            "recipe_cost_min": 5.62,
+            "recipe_cost_max": 5.62,
+            "purchase_quantity": 1,
+            "note": "",
+            "approximate": true,
+            "purchase_label": "1 уп."
+          }
+        },
+        {
+          "ingredient": "кетчуп",
+          "product": "Кетчуп 250 г Своя лінія до Шашлику д/пак",
+          "price": 32.9,
+          "price_unit": "уп.",
+          "url": "https://www.atbmarket.com/product/ketcup-250-g-svoa-linia-do-sasliku-dpak",
+          "estimate": {
+            "purchase_cost": 32.9,
+            "recipe_cost_min": null,
+            "recipe_cost_max": null,
+            "purchase_quantity": 1,
+            "note": "Для орієнтовної покупки закладено одну упаковку. Залишок удома можна виключити.",
+            "approximate": true,
+            "purchase_label": "1 уп. попередньо"
+          }
+        },
+        {
+          "ingredient": "олія соняшникова",
+          "product": "Олія 0,5л Своя лінія соняшникова рафінована",
+          "price": 53.13,
+          "price_unit": "уп.",
+          "url": "https://www.atbmarket.com/product/olia-05l-svoa-linia-sonasnikova-rafinovana",
+          "estimate": {
+            "purchase_cost": 53.13,
+            "recipe_cost_min": null,
+            "recipe_cost_max": null,
+            "purchase_quantity": 1,
+            "note": "Для орієнтовної покупки закладено одну упаковку. Залишок удома можна виключити.",
+            "approximate": true,
+            "purchase_label": "1 уп. попередньо"
+          }
+        },
+        {
+          "ingredient": "копчена паприка",
+          "product": "Приправа 20 г Своя лінія паприка сушена копчена мелена м/уп",
+          "price": 14.4,
+          "price_unit": "уп.",
+          "url": "https://www.atbmarket.com/product/priprava-20-g-svoa-linia-paprika-susena-kopcena-melena-mup",
+          "estimate": {
+            "purchase_cost": 14.4,
+            "recipe_cost_min": null,
+            "recipe_cost_max": null,
+            "purchase_quantity": 1,
+            "note": "Для орієнтовної покупки закладено одну упаковку. Залишок удома можна виключити.",
+            "approximate": true,
+            "purchase_label": "1 уп. попередньо"
+          }
+        },
+        {
+          "ingredient": "лавровий лист",
+          "product": "Лавровий лист 10 г Мрія",
+          "price": 11.5,
+          "price_unit": "уп.",
+          "url": "https://www.atbmarket.com/product/lavrovij-list-10-g-mria",
+          "estimate": {
+            "purchase_cost": 11.5,
+            "recipe_cost_min": null,
+            "recipe_cost_max": null,
+            "purchase_quantity": 1,
+            "note": "Для орієнтовної покупки закладено одну упаковку. Залишок удома можна виключити.",
+            "approximate": true,
+            "purchase_label": "1 уп. попередньо"
+          }
+        },
+        {
+          "ingredient": "перець горошок чорний",
+          "product": "Перець 20г Розумний Вибір чорний цілий (горошок)",
+          "price": 17.9,
+          "price_unit": "уп.",
+          "url": "https://www.atbmarket.com/product/perec-20g-rozumnij-vibir-cornij-cilij-gorosok",
+          "estimate": {
+            "purchase_cost": 17.9,
+            "recipe_cost_min": null,
+            "recipe_cost_max": null,
+            "purchase_quantity": 1,
+            "note": "Для орієнтовної покупки закладено одну упаковку. Залишок удома можна виключити.",
+            "approximate": true,
+            "purchase_label": "1 уп. попередньо"
+          }
+        },
+        {
+          "ingredient": "сіль",
+          "product": "Сіль 1 кг Розумний вибір кухонна кам’яна мелена ґатунок перший м/уп",
+          "price": 20.9,
+          "price_unit": "уп.",
+          "url": "https://www.atbmarket.com/product/sil-1-kg-kuhonna-kamana-melena-gatunok-persij-mup",
+          "estimate": {
+            "purchase_cost": 20.9,
+            "recipe_cost_min": null,
+            "recipe_cost_max": null,
+            "purchase_quantity": 1,
+            "note": "Для орієнтовної покупки закладено одну упаковку. Залишок удома можна виключити.",
+            "approximate": true,
+            "purchase_label": "1 уп. попередньо"
+          }
+        }
+      ]
+    },
+    "silpo": {
+      "found": 14,
+      "priced": 14,
+      "total_items": 15,
+      "basket_estimate_uah": 1119.0,
+      "missing": [
+        "мелений духмяний перець"
+      ],
+      "unpriced": [],
+      "items": [
+        {
+          "ingredient": "буряк",
+          "product": "Буряк",
+          "price": 14.99,
+          "price_unit": "кг",
+          "url": "https://silpo.ua/product/buriak-32570",
+          "estimate": {
+            "purchase_cost": 14.99,
+            "recipe_cost_min": 1.5,
+            "recipe_cost_max": 11.99,
+            "purchase_quantity": 1.0,
+            "note": "Покупка розрахована за верхньою межею діапазону. Перевірте позначену кількість або альтернативу.",
+            "approximate": true,
+            "purchase_label": "1 кг"
+          }
+        },
+        {
+          "ingredient": "капуста",
+          "product": "Капуста білоголова",
+          "price": 15.99,
+          "price_unit": "кг",
+          "url": "https://silpo.ua/product/kapusta-bilogolova-32572",
+          "estimate": {
+            "purchase_cost": 22.39,
+            "recipe_cost_min": 21.59,
+            "recipe_cost_max": 22.39,
+            "purchase_quantity": 1.4,
+            "note": "Покупка розрахована за верхньою межею діапазону. Перевірте позначену кількість або альтернативу.",
+            "approximate": true,
+            "purchase_label": "1.4 кг"
+          }
+        },
+        {
+          "ingredient": "картопля",
+          "product": "Картопля Сорая біла для смаження та запікання",
+          "price": 23.99,
+          "price_unit": "кг",
+          "url": "https://silpo.ua/product/kartoplia-soraia-bila-dlia-smazhennia-ta-zapikannia-1014492",
+          "estimate": {
+            "purchase_cost": 23.99,
+            "recipe_cost_min": 8.64,
+            "recipe_cost_max": 19.19,
+            "purchase_quantity": 1.0,
+            "note": "Покупка розрахована за верхньою межею діапазону. Перевірте позначену кількість або альтернативу.",
+            "approximate": true,
+            "purchase_label": "1 кг"
+          }
+        },
+        {
+          "ingredient": "морква",
+          "product": "Морква",
+          "price": 16.99,
+          "price_unit": "кг",
+          "url": "https://silpo.ua/product/morkva-34650",
+          "estimate": {
+            "purchase_cost": 8.49,
+            "recipe_cost_min": 2.04,
+            "recipe_cost_max": 4.08,
+            "purchase_quantity": 0.5,
+            "note": "Покупка розрахована за верхньою межею діапазону. Перевірте позначену кількість або альтернативу.",
+            "approximate": true,
+            "purchase_label": "0.5 кг"
+          }
+        },
+        {
+          "ingredient": "цибуля",
+          "product": "Цибуля ріпчаста жовта",
+          "price": 19.99,
+          "price_unit": "кг",
+          "url": "https://silpo.ua/product/tsybulia-ripchasta-zhovta-32573",
+          "estimate": {
+            "purchase_cost": 8.0,
+            "recipe_cost_min": 4.0,
+            "recipe_cost_max": 7.2,
+            "purchase_quantity": 0.4,
+            "note": "Покупка розрахована за верхньою межею діапазону. Перевірте позначену кількість або альтернативу.",
+            "approximate": true,
+            "purchase_label": "0.4 кг"
+          }
+        },
+        {
+          "ingredient": "часник",
+          "product": "Часник",
+          "price": 179,
+          "price_unit": "кг",
+          "url": "https://silpo.ua/product/chasnyk-32595",
+          "estimate": {
+            "purchase_cost": 17.9,
+            "recipe_cost_min": 1.61,
+            "recipe_cost_max": 1.61,
+            "purchase_quantity": 0.1,
+            "note": "",
+            "approximate": true,
+            "purchase_label": "0.1 кг"
+          }
+        },
+        {
+          "ingredient": "куряче стегно без кістки та шкіри",
+          "product": "Філе стегна курчат-бройлерів Епікур охолоджене, малий лоток",
+          "price": 324,
+          "price_unit": "кг",
+          "url": "https://silpo.ua/product/file-stegna-kurchat-broileriv-epikur-okholodzhene-malyi-lotok-778085",
+          "estimate": {
+            "purchase_cost": 226.8,
+            "recipe_cost_min": 162.0,
+            "recipe_cost_max": 162.0,
+            "purchase_quantity": 0.7,
+            "note": "",
+            "approximate": false,
+            "purchase_label": "0.7 кг"
+          }
+        },
+        {
+          "ingredient": "ребра свинячі",
+          "product": "Свинячі ребра охолоджені",
+          "price": 254,
+          "price_unit": "кг",
+          "url": "https://silpo.ua/product/svyniachi-rebra-okholodzheni-32649",
+          "estimate": {
+            "purchase_cost": 635.0,
+            "recipe_cost_min": 190.5,
+            "recipe_cost_max": 635.0,
+            "purchase_quantity": 2.5,
+            "note": "Покупка розрахована за верхньою межею діапазону. Перевірте позначену кількість або альтернативу.",
+            "approximate": true,
+            "purchase_label": "2.5 кг"
+          }
+        },
+        {
+          "ingredient": "кетчуп",
+          "product": "Кетчуп Щедро Лагідний з червоною паприкою д/п",
+          "price": 29.99,
+          "price_unit": "уп.",
+          "url": "https://silpo.ua/product/ketchup-shchedro-lagidnyi-z-chervonoiu-paprykoiu-d-p-991216",
+          "estimate": {
+            "purchase_cost": 29.99,
+            "recipe_cost_min": null,
+            "recipe_cost_max": null,
+            "purchase_quantity": 1,
+            "note": "Для орієнтовної покупки закладено одну упаковку. Залишок удома можна виключити.",
+            "approximate": true,
+            "purchase_label": "1 уп. попередньо"
+          }
+        },
+        {
+          "ingredient": "олія соняшникова",
+          "product": "Олія соняшникова «Премія»® рафінована",
+          "price": 56.99,
+          "price_unit": "уп.",
+          "url": "https://silpo.ua/product/oliia-soniashnykova-premiia-rafinovana-842130",
+          "estimate": {
+            "purchase_cost": 56.99,
+            "recipe_cost_min": null,
+            "recipe_cost_max": null,
+            "purchase_quantity": 1,
+            "note": "Для орієнтовної покупки закладено одну упаковку. Залишок удома можна виключити.",
+            "approximate": true,
+            "purchase_label": "1 уп. попередньо"
+          }
+        },
+        {
+          "ingredient": "копчена паприка",
+          "product": "Паприка Kamis копчена мелена",
+          "price": 19.99,
+          "price_unit": "уп.",
+          "url": "https://silpo.ua/product/papryka-kamis-kopchena-melena-811285",
+          "estimate": {
+            "purchase_cost": 19.99,
+            "recipe_cost_min": null,
+            "recipe_cost_max": null,
+            "purchase_quantity": 1,
+            "note": "Для орієнтовної покупки закладено одну упаковку. Залишок удома можна виключити.",
+            "approximate": true,
+            "purchase_label": "1 уп. попередньо"
+          }
+        },
+        {
+          "ingredient": "лавровий лист",
+          "product": "Лист лавровий «Мрія»",
+          "price": 11.99,
+          "price_unit": "уп.",
+          "url": "https://silpo.ua/product/lyst-lavrovyi-mriia-6337",
+          "estimate": {
+            "purchase_cost": 11.99,
+            "recipe_cost_min": null,
+            "recipe_cost_max": null,
+            "purchase_quantity": 1,
+            "note": "Для орієнтовної покупки закладено одну упаковку. Залишок удома можна виключити.",
+            "approximate": true,
+            "purchase_label": "1 уп. попередньо"
+          }
+        },
+        {
+          "ingredient": "перець горошок чорний",
+          "product": "Перець чорний «Любисток» горошок",
+          "price": 32.49,
+          "price_unit": "уп.",
+          "url": "https://silpo.ua/product/perets-chornyi-liubystok-goroshok-468771",
+          "estimate": {
+            "purchase_cost": 32.49,
+            "recipe_cost_min": null,
+            "recipe_cost_max": null,
+            "purchase_quantity": 1,
+            "note": "Для орієнтовної покупки закладено одну упаковку. Залишок удома можна виключити.",
+            "approximate": true,
+            "purchase_label": "1 уп. попередньо"
+          }
+        },
+        {
+          "ingredient": "сіль",
+          "product": "Пакет Сільпо Пакет з Пакетів 12 кг",
+          "price": 9.99,
+          "price_unit": "уп.",
+          "url": "https://silpo.ua/product/paket-silpo-paket-z-paketiv-12-kg-888376",
+          "estimate": {
+            "purchase_cost": 9.99,
+            "recipe_cost_min": null,
+            "recipe_cost_max": null,
+            "purchase_quantity": 1,
+            "note": "Для орієнтовної покупки закладено одну упаковку. Залишок удома можна виключити.",
+            "approximate": true,
+            "purchase_label": "1 уп. попередньо"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+ffconcat version 1.0
+file '01-home.jpg'
+duration 8
+file '02-recipe-list.jpg'
+duration 8
+file '04-duplicate-packages.jpg'
+duration 10
+file '03-categories-prices.jpg'
+duration 10
+file '07-not-found.jpg'
+duration 8
+file '08-ai-amounts.jpg'
+duration 10
+file '09-estimate-applied.jpg'
+duration 8
+file '05-recipe-chat.jpg'
+duration 10
+file '06-general-chat.jpg'
+duration 8
+file '06-general-chat.jpg'

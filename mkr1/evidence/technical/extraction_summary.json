@@ -1,0 +1,53 @@
+[
+  {
+    "case": "borscht",
+    "seconds": 11.105,
+    "expected_main": 11,
+    "found_main": 11,
+    "missing_main": [],
+    "optional_expected": 3,
+    "optional_found": 3,
+    "unexpected_names": [],
+    "ingredients": 14,
+    "source_quotes_verified": true,
+    "model": "qwen3.5:4b",
+    "input_tokens": 1576,
+    "output_tokens": 1403,
+    "range_correct": true,
+    "no_cookware": true,
+    "unknown_cabbage_preserved": true
+  },
+  {
+    "case": "cabbage",
+    "seconds": 7.594,
+    "expected_main": 9,
+    "found_main": 9,
+    "missing_main": [],
+    "optional_expected": 1,
+    "optional_found": 1,
+    "unexpected_names": [],
+    "ingredients": 10,
+    "source_quotes_verified": true,
+    "model": "qwen3.5:4b",
+    "input_tokens": 1400,
+    "output_tokens": 984,
+    "paprika_quantity_correct": true
+  },
+  {
+    "case": "pizza",
+    "seconds": 7.721,
+    "expected_main": 11,
+    "found_main": 11,
+    "missing_main": [],
+    "optional_expected": 0,
+    "optional_found": 0,
+    "unexpected_names": [],
+    "ingredients": 11,
+    "source_quotes_verified": true,
+    "model": "qwen3.5:4b",
+    "input_tokens": 1063,
+    "output_tokens": 1018,
+    "duplicate_mozzarella_handled": true,
+    "servings_correct": true
+  }
+]

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Смак & Кошик — рецепти й покупки</title>
+    <link rel="stylesheet" href="/style.css?v=final-3">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <a class="brand" href="/" aria-label="Смак і Кошик"><span class="brand-icon">♧</span><span>Смак <i>&</i>
+                Кошик<small>МЕНШЕ РУТИНИ. БІЛЬШЕ СМАКУ.</small></span></a>
+        <div class="nav-label">ВАША КУХНЯ</div>
+        <button class="nav active" data-view="recipes"><span>▤</span> Рецепти й покупки</button>
+        <button class="nav" data-view="chat"><span>◌</span> Просто чат</button>
+        <button class="nav small-nav" id="measure-small"><span>◷</span> Вимірювання</button>
+        <div class="history-head"><span>ЗБЕРЕЖЕНІ СПИСКИ</span><button id="new-session" title="Новий список"
+                aria-label="Новий список">＋</button></div>
+        <div id="history" class="history">
+            <p>Тут будуть ваші збережені списки.</p>
+        </div>
+        <div class="sidebar-bottom"><button id="measure-open">◷ Вимірювання для МКР</button><span id="model-status"
+                class="model-status">Перевіряємо модель…</span><small>Рецепти обробляються на цьому комп’ютері.</small>
+        </div>
+    </aside>
+    <main>
+        <header>
+            <div><span class="eyebrow">ПЛАНУЄМО СМАЧНЕ</span>
+                <h1 id="page-title">Від рецепта до покупок</h1>
+            </div>
+            <div class="city-pill"><span>⌖</span> Житомир <span class="city-note">ціни обраних магазинів</span></div>
+        </header>
+        <div id="notice" role="status" class="notice hidden"></div>
+        <section id="recipes-view">
+            <div class="intro">
+                <div><span class="intro-tag">ВАШ ПЛАН НА ОБІД</span>
+                    <h2>Скиньте рецепт.<br>Список складемо разом.</h2>
+                    <p>З текстом, емодзі й порадами — як скопіювали.<br>Об’єднаємо продукти та знайдемо ціни поруч.</p>
+                </div>
+                <div class="intro-art" aria-hidden="true">
+                    <div class="plate"></div><span class="leaf l1"></span><span class="leaf l2"></span><span
+                        class="tomato t1"></span><span class="tomato t2"></span><span class="carrot"></span><span
+                        class="art-label">щось смачне починається тут</span>
+                </div>
+            </div>
+            <div class="workspace">
+                <div class="recipe-column">
+                    <section class="card recipe-input">
+                        <div class="section-title">
+                            <h2>Ваші рецепти</h2><button class="text-button" id="clear-input">Очистити</button>
+                        </div>
+                        <p class="muted">Можна вставити кілька рецептів одразу.</p>
+                        <label for="recipe-text" class="sr-only">Текст рецептів</label><textarea id="recipe-text"
+                            placeholder="Наприклад: На млинці беру 2 яйця, 500 мл молока, 200 г борошна і дрібку солі. Змішую й смажу…"></textarea>
+                        <div class="input-bottom"><button id="load-file" class="text-button">＋ Додати .txt</button><span
+                                id="char-count">0 символів</span><input type="file" id="text-file"
+                                accept=".txt,text/plain" hidden></div>
+                        <button id="extract" class="primary wide">Скласти список покупок <span>✦</span></button>
+                        <div id="extract-progress" class="progress hidden"><span class="spinner"></span><span>Читаємо
+                                рецепт і звіряємо інгредієнти…</span><span id="extract-time"></span></div>
+                    </section>
+                    <section id="recipe-cards" class="recipe-cards"></section>
+                    <section id="recipe-chat-card" class="card hidden">
+                        <div class="section-title">
+                            <h2>Запитайте про рецепт</h2><span class="badge">З контекстом</span>
+                        </div>
+                        <p class="muted">Заміни продуктів, приготування та уточнення кількостей.</p>
+                        <div class="quick-questions"><button>Що потрібно уточнити?</button><button>Чим замінити
+                                інгредієнт?</button></div>
+                        <div id="recipe-messages" class="messages compact" aria-live="polite"></div>
+                        <form id="recipe-chat-form" class="chat-form"><label for="recipe-question"
+                                class="sr-only">Питання про рецепт</label><textarea id="recipe-question" rows="1"
+                                placeholder="Наприклад: чи можна замінити шинку?" required></textarea><button
+                                class="primary" type="submit">Надіслати</button></form>
+                        <p class="small-note">Відповідь у чаті не змінює список автоматично.</p>
+                    </section>
+                </div>
+                <div class="shopping-column">
+                    <section class="card shopping-card">
+                        <div class="section-title">
+                            <div><span class="eyebrow">УСЕ В ОДНОМУ МІСЦІ</span>
+                                <h2>Список покупок <span id="item-count" class="count">0</span></h2>
+                            </div><button id="save-session" class="outline" disabled>Зберегти</button>
+                        </div>
+                        <div id="shopping-empty" class="empty"><span class="basket-icon">♧</span>
+                            <h3>Що сьогодні готуємо?</h3>
+                            <p>Додайте рецепт ліворуч — тут з’являться<br>продукти, кількості й ціни двох магазинів.</p>
+                            <div class="empty-tags"><span>Без ручного форматування</span><span>Без вигаданих
+                                    кількостей</span></div>
+                        </div>
+                        <div id="shopping-content" class="hidden">
+                            <div class="shopping-toolbar"><span id="shopping-summary"></span>
+                                <div><button id="copy-list" class="text-button">Копіювати</button><button
+                                        id="download-list" class="text-button">Завантажити</button></div>
+                            </div>
+                            <p class="small-note">Позначте «Є вдома», щоб виключити продукт. Натисніть на кількість для
+                                редагування.</p>
+                            <div class="list-tools"><label>Відділ магазину<select id="category-filter"
+                                        aria-label="Відділ магазину">
+                                        <option value="">Усі відділи</option>
+                                    </select></label><button id="suggest-amounts" class="outline">✦ Запропонувати
+                                    кількості</button></div>
+                            <p class="small-note">Під час пошуку цін AI запропонує вагу для попереднього кошика.
+                                Кількості з рецепта не змінюються. Для спецій та соусів попередньо рахуємо одну
+                                упаковку.</p>
+                            <div id="shopping-list"></div>
+                            <div class="price-action"><button id="fetch-prices" class="primary">Знайти ціни в
+                                    магазинах</button><button id="refresh-prices" class="text-button"
+                                    title="Оновити, не використовуючи кеш">Оновити</button><span id="price-progress"
+                                    class="muted"></span></div>
+                            <div id="store-totals" class="store-totals"></div>
+                            <div id="price-notes" class="small-note"></div>
+                        </div>
+                    </section>
+                    <section class="store-context hidden">
+                        <div><span class="store-logo atb">АТБ</span>
+                            <p id="atb-context">Обираємо магазин у Житомирі…</p>
+                        </div>
+                        <div><span class="store-logo silpo">Сільпо</span>
+                            <p id="silpo-context">Обираємо магазин у Житомирі…</p>
+                        </div>
+                        <p class="small-note">Ціни й наявність залежать від магазину та часу. Ціна товару — не завжди
+                            вартість кількості для рецепта.</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section id="chat-view" class="hidden">
+            <div class="chat-layout card">
+                <div class="chat-heading"><span class="eyebrow"></span>
+                    <button id="clear-chat" class="text-button">Очистити діалог</button>
+                </div>
+                <div id="general-messages" class="messages general" aria-live="polite">
+                    <div class="chat-welcome"><span>✦</span>
+                        <h3>Чим допомогти?</h3>
+                        <p>Поставте запитання або обговорімо вашу ідею.</p>
+                    </div>
+                </div>
+                <form id="general-chat-form" class="chat-form"><label for="general-question"
+                        class="sr-only">Повідомлення в чат</label><textarea id="general-question" rows="2"
+                        placeholder="Напишіть повідомлення…" required></textarea><button class="primary"
+                        type="submit">Надіслати</button></form>
+            </div>
+        </section>
+        <footer>Смак & Кошик · Особистий помічник для планування покупок <span>Результат завжди можна перевірити й
+                виправити.</span></footer>
+    </main>
+    <dialog id="edit-dialog">
+        <form method="dialog" id="edit-form">
+            <div class="section-title">
+                <h2>Уточнити продукт</h2><button value="cancel" formnovalidate class="icon-button"
+                    aria-label="Закрити">✕</button>
+            </div><label>Назва<input id="edit-name" required></label>
+            <div class="form-grid"><label>Від<input id="edit-min" type="number" min="0.001" step="any"
+                        placeholder="Не вказано"></label><label>До<input id="edit-max" type="number" min="0.001"
+                        step="any" placeholder="Так само"></label></div><label>Одиниця<select id="edit-unit">
+                    <option value="">Не вказано</option>
+                    <option>г</option>
+                    <option>кг</option>
+                    <option>мл</option>
+                    <option>л</option>
+                    <option>шт</option>
+                    <option>зубчик</option>
+                    <option>ст. л.</option>
+                    <option>ч. л.</option>
+                    <option>пучок</option>
+                    <option>склянка</option>
+                    <option>за смаком</option>
+                </select></label><label>Пошук у магазині<input id="edit-query" required></label>
+            <p class="small-note">Зміна застосовується до цього рядка й позначається як ваше уточнення.</p><button
+                value="save" class="primary wide">Застосувати</button>
+        </form>
+    </dialog>
+    <dialog id="candidate-dialog">
+        <div class="section-title">
+            <h2 id="candidate-title">Оберіть товар</h2><button class="icon-button" id="candidate-close"
+                aria-label="Закрити">✕</button>
+        </div>
+        <p class="muted">Звірте назву, вид продукту та фасування. Пошук іноді знаходить схожі товари.</p>
+        <div id="candidate-list"></div>
+        <details class="manual-import">
+            <summary>Додати товар вручну</summary>
+            <p class="small-note">Якщо пошук не знайшов потрібне, скопіюйте назву, ціну й посилання з каталогу. Таке
+                значення буде позначене як введене вручну.</p><label>Назва<input id="manual-name"></label>
+            <div class="form-grid"><label>Ціна, грн<input id="manual-price" type="number" min="0.01"
+                        step="0.01"></label><label>Фасування (напр. 1 кг, 200 г)<input id="manual-pack"></label></div>
+            <label>Посилання на товар<input id="manual-url" type="url"></label><button id="manual-add"
+                class="outline">Додати й обрати</button>
+        </details>
+    </dialog>
+    <dialog id="measure-dialog">
+        <form id="measure-form">
+            <div class="section-title">
+                <h2>Вимірювання до / після</h2><button type="button" id="measure-close" class="icon-button"
+                    aria-label="Закрити">✕</button>
+            </div>
+            <p class="muted">Запишіть фактично виміряний час для однакового завдання. У час «після» включіть перевірку й
+                виправлення списку.</p><label>Назва випадку<input id="measure-case"
+                    placeholder="Борщ + тушкована капуста" required></label>
+            <div class="form-grid"><label>Вручну, секунд<input id="measure-before" type="number" min="1"
+                        required></label><label>З AI, секунд<input id="measure-after" type="number" min="1"
+                        required></label></div><label>Що перевіряли або виправляли<textarea id="measure-notes"
+                    rows="3"></textarea></label><button type="submit" class="primary wide">Зберегти вимірювання</button>
+            <div id="measurement-history" class="small-note"></div>
+        </form>
+    </dialog>
+    <dialog id="suggest-dialog">
+        <div class="section-title">
+            <h2>Приблизні кількості</h2><button id="suggest-close" class="icon-button" aria-label="Закрити">✕</button>
+        </div>
+        <p class="muted">Це припущення AI, а не факти з рецепта. Перевірте пояснення, змініть значення за потреби та
+            відмітьте лише потрібні пропозиції.</p>
+        <div id="suggestions-list"></div><button id="apply-suggestions" class="primary wide">Застосувати
+            відмічені</button>
+        <p class="small-note">Оригінальна кількість залишиться у джерельній цитаті; у списку й кошторисі з’явиться
+            позначка AI-оцінки.</p>
+    </dialog>
+    <script src="/app.js?v=final-3"></script>
+</body>
+
+</html>

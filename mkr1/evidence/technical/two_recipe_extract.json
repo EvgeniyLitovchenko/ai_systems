@@ -1,0 +1,834 @@
+{
+  "recipes": [
+    {
+      "title": "Український червоний борщ зі свинячими ребрами",
+      "servings": null,
+      "ingredients": [
+        {
+          "id": "r1i1",
+          "name": "Ребра свинячі",
+          "query": "Ребра свинячі",
+          "quantity_min": 5.0,
+          "quantity_max": 10.0,
+          "unit": "шт",
+          "source_quote": "5-10 шт. Ребра свинячі🐷",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Український червоний борщ зі свинячими ребрами"
+        },
+        {
+          "id": "r1i2",
+          "name": "Картопля",
+          "query": "Картопля",
+          "quantity_min": 3.0,
+          "quantity_max": 5.0,
+          "unit": "шт",
+          "source_quote": "3-5 шт. Картопля 🥔",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Український червоний борщ зі свинячими ребрами"
+        },
+        {
+          "id": "r1i3",
+          "name": "Буряк",
+          "query": "Буряк",
+          "quantity_min": 1.0,
+          "quantity_max": 4.0,
+          "unit": "шт",
+          "source_quote": "1-4 шт. Буряк 🫜",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Український червоний борщ зі свинячими ребрами"
+        },
+        {
+          "id": "r1i4",
+          "name": "Морква",
+          "query": "Морква",
+          "quantity_min": 1.0,
+          "quantity_max": 2.0,
+          "unit": "шт",
+          "source_quote": "1-2 шт. Морква 🥕",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Український червоний борщ зі свинячими ребрами"
+        },
+        {
+          "id": "r1i5",
+          "name": "Цибуля ріпчаста",
+          "query": "Цибуля ріпчаста",
+          "quantity_min": 0.5,
+          "quantity_max": 1.0,
+          "unit": "шт",
+          "source_quote": "Пів або 1 шт. Цибуля 🧅 ріпчаста",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Український червоний борщ зі свинячими ребрами"
+        },
+        {
+          "id": "r1i6",
+          "name": "Капуста",
+          "query": "Капуста",
+          "quantity_min": null,
+          "quantity_max": null,
+          "unit": "",
+          "source_quote": "Капуста",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Український червоний борщ зі свинячими ребрами"
+        },
+        {
+          "id": "r1i7",
+          "name": "Олія соняшникова",
+          "query": "Олія соняшникова",
+          "quantity_min": null,
+          "quantity_max": null,
+          "unit": "",
+          "source_quote": "Олія соняшникова 🌻",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Український червоний борщ зі свинячими ребрами"
+        },
+        {
+          "id": "r1i8",
+          "name": "Сіль",
+          "query": "Сіль",
+          "quantity_min": null,
+          "quantity_max": null,
+          "unit": "",
+          "source_quote": "за смаком Сіль 🧂",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Український червоний борщ зі свинячими ребрами"
+        },
+        {
+          "id": "r1i9",
+          "name": "Кетчуп",
+          "query": "Кетчуп",
+          "quantity_min": 1.0,
+          "quantity_max": 2.0,
+          "unit": "ст. л.",
+          "source_quote": "1-2 ст. л. Кетчуп або томатна паста",
+          "notes": "",
+          "optional": false,
+          "alternatives": [
+            "томатна паста"
+          ],
+          "needs_review": true,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Український червоний борщ зі свинячими ребрами"
+        },
+        {
+          "id": "r1i10",
+          "name": "Лавровий лист",
+          "query": "Лавровий лист",
+          "quantity_min": 1.0,
+          "quantity_max": 2.0,
+          "unit": "шт",
+          "source_quote": "1-2 шт. Лавровий лист 🍂",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Український червоний борщ зі свинячими ребрами"
+        },
+        {
+          "id": "r1i11",
+          "name": "Перець горошок чорний",
+          "query": "Перець горошок чорний",
+          "quantity_min": 4.0,
+          "quantity_max": 6.0,
+          "unit": "шт",
+          "source_quote": "4-6 шт. Перець горошок чорний або мікс перців",
+          "notes": "",
+          "optional": false,
+          "alternatives": [
+            "мікс перців"
+          ],
+          "needs_review": true,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Український червоний борщ зі свинячими ребрами"
+        },
+        {
+          "id": "r1i12",
+          "name": "часник",
+          "query": "часник",
+          "quantity_min": null,
+          "quantity_max": null,
+          "unit": "",
+          "source_quote": "подавати з часником🧄",
+          "notes": "",
+          "optional": true,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": true,
+          "recipe_id": "r1",
+          "recipe_title": "Український червоний борщ зі свинячими ребрами"
+        },
+        {
+          "id": "r1i13",
+          "name": "сало",
+          "query": "сало",
+          "quantity_min": null,
+          "quantity_max": null,
+          "unit": "",
+          "source_quote": "подавати з часником🧄, салом та житнім хлібом 🍞",
+          "notes": "",
+          "optional": true,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": true,
+          "recipe_id": "r1",
+          "recipe_title": "Український червоний борщ зі свинячими ребрами"
+        },
+        {
+          "id": "r1i14",
+          "name": "житній хліб",
+          "query": "житній хліб",
+          "quantity_min": null,
+          "quantity_max": null,
+          "unit": "",
+          "source_quote": "подавати з часником🧄, салом та житнім хлібом 🍞",
+          "notes": "",
+          "optional": true,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": true,
+          "recipe_id": "r1",
+          "recipe_title": "Український червоний борщ зі свинячими ребрами"
+        }
+      ],
+      "id": "r1"
+    },
+    {
+      "title": "Тушкована капуста з м'ясом",
+      "servings": 5.0,
+      "ingredients": [
+        {
+          "id": "r2i1",
+          "name": "Капуста",
+          "query": "Капуста",
+          "quantity_min": 1200.0,
+          "quantity_max": 1200.0,
+          "unit": "г",
+          "source_quote": "1200 г Капуста",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": false,
+          "excluded": false,
+          "recipe_id": "r2",
+          "recipe_title": "Тушкована капуста з м'ясом"
+        },
+        {
+          "id": "r2i2",
+          "name": "Куряче стегно без кістки та шкіри",
+          "query": "Куряче стегно без кістки та шкіри",
+          "quantity_min": 500.0,
+          "quantity_max": 500.0,
+          "unit": "г",
+          "source_quote": "500 г Куряче стегно без кістки та шкіри",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": false,
+          "excluded": false,
+          "recipe_id": "r2",
+          "recipe_title": "Тушкована капуста з м'ясом"
+        },
+        {
+          "id": "r2i3",
+          "name": "Морква велика",
+          "query": "Морква велика",
+          "quantity_min": 1.0,
+          "quantity_max": 1.0,
+          "unit": "шт",
+          "source_quote": "1 шт Морква велика",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": false,
+          "excluded": false,
+          "recipe_id": "r2",
+          "recipe_title": "Тушкована капуста з м'ясом"
+        },
+        {
+          "id": "r2i4",
+          "name": "Цибуля ріпчаста середня",
+          "query": "Цибуля ріпчаста середня",
+          "quantity_min": 2.0,
+          "quantity_max": 2.0,
+          "unit": "шт",
+          "source_quote": "2 шт Цибуля ріпчаста середня",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": false,
+          "excluded": false,
+          "recipe_id": "r2",
+          "recipe_title": "Тушкована капуста з м'ясом"
+        },
+        {
+          "id": "r2i5",
+          "name": "Часник",
+          "query": "Часник",
+          "quantity_min": 3.0,
+          "quantity_max": 3.0,
+          "unit": "зубчик",
+          "source_quote": "3 зубчики Часник",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": false,
+          "excluded": false,
+          "recipe_id": "r2",
+          "recipe_title": "Тушкована капуста з м'ясом"
+        },
+        {
+          "id": "r2i6",
+          "name": "Копчена паприка",
+          "query": "Копчена паприка",
+          "quantity_min": 1.0,
+          "quantity_max": 1.0,
+          "unit": "ч. л.",
+          "source_quote": "1 ч.л. (0.5 ч.л.) для м'яса, 0.5 ч.л. для капусти) Копчена паприка",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": false,
+          "excluded": false,
+          "recipe_id": "r2",
+          "recipe_title": "Тушкована капуста з м'ясом"
+        },
+        {
+          "id": "r2i7",
+          "name": "Мелений духмяний перець",
+          "query": "Мелений духмяний перець",
+          "quantity_min": null,
+          "quantity_max": null,
+          "unit": "",
+          "source_quote": "за смаком Мелений духмяний перець",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": false,
+          "recipe_id": "r2",
+          "recipe_title": "Тушкована капуста з м'ясом"
+        },
+        {
+          "id": "r2i8",
+          "name": "Сіль",
+          "query": "Сіль",
+          "quantity_min": null,
+          "quantity_max": null,
+          "unit": "",
+          "source_quote": "за смаком Сіль",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": false,
+          "recipe_id": "r2",
+          "recipe_title": "Тушкована капуста з м'ясом"
+        },
+        {
+          "id": "r2i9",
+          "name": "Соняшникова олія",
+          "query": "Соняшникова олія",
+          "quantity_min": null,
+          "quantity_max": null,
+          "unit": "",
+          "source_quote": "для смаження Соняшникова олія",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": false,
+          "recipe_id": "r2",
+          "recipe_title": "Тушкована капуста з м'ясом"
+        },
+        {
+          "id": "r2i10",
+          "name": "Кріп дрібно нарізаний",
+          "query": "Кріп дрібно нарізаний",
+          "quantity_min": null,
+          "quantity_max": null,
+          "unit": "",
+          "source_quote": "для подачі Кріп дрібно нарізаний",
+          "notes": "",
+          "optional": true,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": true,
+          "recipe_id": "r2",
+          "recipe_title": "Тушкована капуста з м'ясом"
+        }
+      ],
+      "id": "r2"
+    }
+  ],
+  "source_text": "Інгредієнти\n5 л кастрюля\n5-10 шт. Ребра свинячі🐷\n3-5 шт. Картопля 🥔\n1-4 шт. Буряк 🫜\n1-2 шт. Морква 🥕\nПів або 1 шт. Цибуля 🧅 ріпчаста\nКапуста\nОлія соняшникова 🌻\nза смаком Сіль 🧂\n1-2 ст. л. Кетчуп або томатна паста\n1-2 шт. Лавровий лист 🍂\n4-6 шт. Перець горошок чорний або мікс перців\nКроки\n40 хвилин до 1 години\n1\nДля початку беремо свинячі реберця, миємо, підсушуємо кухонними рушником та кладемо здегка підсмажити на сковороді.\n\nФото кроку 1 до Український червоний борщ зі свинячими ребрами.\n2\nДалі беремо цибулю🧅 ріжемо невеликими кубиками так кладемо на сковорідку де готувались реберця, при потребі а додати ще соняшникової 🌻 олії та смажимо цибулю🧅.\n\nФото кроку 2 до Український червоний борщ зі свинячими ребрами.\n3\nДалі беремо буряк🫜 та моркву 🥕 чистимо та натираємо на терці(в мене був вже в морозильці зарання натертий), кидаємо до до підсмаженої цибулі 🧅.за бажання додати пару ст.ложок кетчупу або томатної пасти.\n\nФото кроку 3 до Український червоний борщ зі свинячими ребрами.\nФото кроку 3 до Український червоний борщ зі свинячими ребрами.\n4\nОкремо беремо картоплю чистимо миємо та нарізаємо кубиками, беремо каструлю наливаємо туди води та кидаємо картоплю,реберця, сіль 🧂 за смаком та готуємо до майже приготованої картоплі(періодично знімати накип).\n\nФото кроку 4 до Український червоний борщ зі свинячими ребрами.\nФото кроку 4 до Український червоний борщ зі свинячими ребрами.\n5\nДалі беремо капусту шинкуємо (в мене вже в заморозці зараньше нашинкована) та кидаємо варитися до картоплі та реберець.\n\n6\nПісля того як звариться капуста кидаємо нашу підсмажену цибулю🧅, моркву 🥕та буряк 🫜 та варимо на маленькому вогні (даємо борщу потомитися). Після того як борщ приготувався найкраще подавати з часником🧄, салом та житнім хлібом 🍞. Смачного! 😋\n\n\nІнгредієнти\n5 порцій\n1200 г Капуста\n500 г Куряче стегно без кістки та шкіри\n1 шт Морква велика\n2 шт Цибуля ріпчаста середня\n3 зубчики Часник\n1 ч.л. (0.5 ч.л.) для м'яса, 0.5 ч.л. для капусти) Копчена паприка\nза смаком Мелений духмяний перець\nза смаком Сіль\nдля смаження Соняшникова олія\nдля подачі Кріп дрібно нарізаний\nКроки\n1\nКуряче стегно нарізати шматочками, обсмажити на сухій сковороді під кришкою, випарити рідину.\n\nФото кроку 1 до Тушкована капуста з м'ясом.\n2\nДодати до м’яса дрібно нарізаний часник, 0.5 ч.л. копченої паприки, сіль, перець, перемішати, довести до готовності, перекласти в тарілку.\n\nФото кроку 2 до Тушкована капуста з м'ясом.\nФото кроку 2 до Тушкована капуста з м'ясом.\nФото кроку 2 до Тушкована капуста з м'ясом.\n3\nЦибулю нарізати півкільцями, обсмажити до прозорості.\n\nФото кроку 3 до Тушкована капуста з м'ясом.\n4\nМоркву натерти на великій тертці, додати до цибулі, тушкувати разом.\n\nФото кроку 4 до Тушкована капуста з м'ясом.\nФото кроку 4 до Тушкована капуста з м'ясом.\n5\nОвочі викласти до м’яса.\n\n6\nКапусту нарізати соломкою, тушкувати окремо з олією під кришкою до напівготовності, посолити, додати 0.5 ч.л. копченої паприки.\n\nФото кроку 6 до Тушкована капуста з м'ясом.\nФото кроку 6 до Тушкована капуста з м'ясом.\nФото кроку 6 до Тушкована капуста з м'ясом.\n7\nДодати до капусти овочі та м’ясо, перемішати, накрити кришкою, довести до готовності.\n\nФото кроку 7 до Тушкована капуста з м'ясом.\n8\nПеред подачею посипати дрібно нарізаним кропом.\n\nФото кроку 8 до Тушкована капуста з м'ясом.\nФото кроку 8 до Тушкована капуста з м'ясом.\nПоради\nСмачна тушкована капуста з курячим м'ясом, яка підходить як гаряча, так і холодна страва. Ідеально для обіду або вечері!\n",
+  "usage": {
+    "seconds": 18.621000000000002,
+    "model": "qwen3.5:4b",
+    "prompt_tokens": 2284,
+    "output_tokens": 2380,
+    "api_cost_uah": 0,
+    "cost_note": "Локальна модель: без оплати API; електроенергія й обладнання окремо не вимірювалися."
+  },
+  "created_at": "2026-11-20T21:43:42.824064+00:00",
+  "warnings": [
+    "Кількості без ваги, діапазони й альтернативи потрібно перевірити перед покупкою."
+  ],
+  "shopping": [
+    {
+      "id": "188733c9c1f5",
+      "name": "буряк",
+      "category": "Овочі та зелень",
+      "query": "Буряк",
+      "unit": "шт",
+      "quantity_min": 1.0,
+      "quantity_max": 4.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Український червоний борщ зі свинячими ребрами",
+          "quote": "1-4 шт. Буряк 🫜",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": true
+    },
+    {
+      "id": "4b32d7750899",
+      "name": "капуста",
+      "category": "Овочі та зелень",
+      "query": "Капуста",
+      "unit": "г",
+      "quantity_min": 1200.0,
+      "quantity_max": 1200.0,
+      "unknown_quantity": true,
+      "sources": [
+        {
+          "recipe": "Український червоний борщ зі свинячими ребрами",
+          "quote": "Капуста",
+          "excluded": false
+        },
+        {
+          "recipe": "Тушкована капуста з м'ясом",
+          "quote": "1200 г Капуста",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": true
+    },
+    {
+      "id": "30acb9185d0c",
+      "name": "картопля",
+      "category": "Овочі та зелень",
+      "query": "Картопля",
+      "unit": "шт",
+      "quantity_min": 3.0,
+      "quantity_max": 5.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Український червоний борщ зі свинячими ребрами",
+          "quote": "3-5 шт. Картопля 🥔",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": true
+    },
+    {
+      "id": "ca4dd55ba9cf",
+      "name": "морква",
+      "category": "Овочі та зелень",
+      "query": "Морква",
+      "unit": "шт",
+      "quantity_min": 2.0,
+      "quantity_max": 3.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Український червоний борщ зі свинячими ребрами",
+          "quote": "1-2 шт. Морква 🥕",
+          "excluded": false
+        },
+        {
+          "recipe": "Тушкована капуста з м'ясом",
+          "quote": "1 шт Морква велика",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": true
+    },
+    {
+      "id": "09a796fa0601",
+      "name": "цибуля",
+      "category": "Овочі та зелень",
+      "query": "Цибуля ріпчаста",
+      "unit": "шт",
+      "quantity_min": 2.5,
+      "quantity_max": 3.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Український червоний борщ зі свинячими ребрами",
+          "quote": "Пів або 1 шт. Цибуля 🧅 ріпчаста",
+          "excluded": false
+        },
+        {
+          "recipe": "Тушкована капуста з м'ясом",
+          "quote": "2 шт Цибуля ріпчаста середня",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": true
+    },
+    {
+      "id": "1622934086af",
+      "name": "часник",
+      "category": "Овочі та зелень",
+      "query": "часник",
+      "unit": "зубчик",
+      "quantity_min": 3.0,
+      "quantity_max": 3.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Український червоний борщ зі свинячими ребрами",
+          "quote": "подавати з часником🧄",
+          "excluded": true
+        },
+        {
+          "recipe": "Тушкована капуста з м'ясом",
+          "quote": "3 зубчики Часник",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": false
+    },
+    {
+      "id": "a4159ef449a8",
+      "name": "куряче стегно без кістки та шкіри",
+      "category": "М’ясо та риба",
+      "query": "Куряче стегно без кістки та шкіри",
+      "unit": "г",
+      "quantity_min": 500.0,
+      "quantity_max": 500.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Тушкована капуста з м'ясом",
+          "quote": "500 г Куряче стегно без кістки та шкіри",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": false
+    },
+    {
+      "id": "5f8222083b42",
+      "name": "ребра свинячі",
+      "category": "М’ясо та риба",
+      "query": "Ребра свинячі",
+      "unit": "шт",
+      "quantity_min": 5.0,
+      "quantity_max": 10.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Український червоний борщ зі свинячими ребрами",
+          "quote": "5-10 шт. Ребра свинячі🐷",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": true
+    },
+    {
+      "id": "0c36ff436b4d",
+      "name": "кетчуп",
+      "category": "Олія та соуси",
+      "query": "Кетчуп",
+      "unit": "ст. л.",
+      "quantity_min": 1.0,
+      "quantity_max": 2.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Український червоний борщ зі свинячими ребрами",
+          "quote": "1-2 ст. л. Кетчуп або томатна паста",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [
+        "томатна паста"
+      ],
+      "excluded": false,
+      "needs_review": true
+    },
+    {
+      "id": "549b598567fb",
+      "name": "олія соняшникова",
+      "category": "Олія та соуси",
+      "query": "Олія соняшникова",
+      "unit": "",
+      "quantity_min": null,
+      "quantity_max": null,
+      "unknown_quantity": true,
+      "sources": [
+        {
+          "recipe": "Український червоний борщ зі свинячими ребрами",
+          "quote": "Олія соняшникова 🌻",
+          "excluded": false
+        },
+        {
+          "recipe": "Тушкована капуста з м'ясом",
+          "quote": "для смаження Соняшникова олія",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": true
+    },
+    {
+      "id": "6af44afd9748",
+      "name": "копчена паприка",
+      "category": "Спеції",
+      "query": "Копчена паприка",
+      "unit": "ч. л.",
+      "quantity_min": 1.0,
+      "quantity_max": 1.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Тушкована капуста з м'ясом",
+          "quote": "1 ч.л. (0.5 ч.л.) для м'яса, 0.5 ч.л. для капусти) Копчена паприка",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": false
+    },
+    {
+      "id": "55068ddb4354",
+      "name": "лавровий лист",
+      "category": "Спеції",
+      "query": "Лавровий лист",
+      "unit": "шт",
+      "quantity_min": 1.0,
+      "quantity_max": 2.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Український червоний борщ зі свинячими ребрами",
+          "quote": "1-2 шт. Лавровий лист 🍂",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": true
+    },
+    {
+      "id": "35db1ca015f4",
+      "name": "мелений духмяний перець",
+      "category": "Спеції",
+      "query": "Мелений духмяний перець",
+      "unit": "",
+      "quantity_min": null,
+      "quantity_max": null,
+      "unknown_quantity": true,
+      "sources": [
+        {
+          "recipe": "Тушкована капуста з м'ясом",
+          "quote": "за смаком Мелений духмяний перець",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": true
+    },
+    {
+      "id": "a8f719e99306",
+      "name": "перець горошок чорний",
+      "category": "Спеції",
+      "query": "Перець горошок чорний",
+      "unit": "шт",
+      "quantity_min": 4.0,
+      "quantity_max": 6.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Український червоний борщ зі свинячими ребрами",
+          "quote": "4-6 шт. Перець горошок чорний або мікс перців",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [
+        "мікс перців"
+      ],
+      "excluded": false,
+      "needs_review": true
+    },
+    {
+      "id": "31fdab1da74f",
+      "name": "сіль",
+      "category": "Спеції",
+      "query": "Сіль",
+      "unit": "",
+      "quantity_min": null,
+      "quantity_max": null,
+      "unknown_quantity": true,
+      "sources": [
+        {
+          "recipe": "Український червоний борщ зі свинячими ребрами",
+          "quote": "за смаком Сіль 🧂",
+          "excluded": false
+        },
+        {
+          "recipe": "Тушкована капуста з м'ясом",
+          "quote": "за смаком Сіль",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": true
+    },
+    {
+      "id": "849498add2f7",
+      "name": "кріп",
+      "category": "Овочі та зелень",
+      "query": "Кріп дрібно нарізаний",
+      "unit": "",
+      "quantity_min": null,
+      "quantity_max": null,
+      "unknown_quantity": true,
+      "sources": [
+        {
+          "recipe": "Тушкована капуста з м'ясом",
+          "quote": "для подачі Кріп дрібно нарізаний",
+          "excluded": true
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": true,
+      "needs_review": false
+    },
+    {
+      "id": "349af4bdfa86",
+      "name": "сало",
+      "category": "М’ясо та риба",
+      "query": "сало",
+      "unit": "",
+      "quantity_min": null,
+      "quantity_max": null,
+      "unknown_quantity": true,
+      "sources": [
+        {
+          "recipe": "Український червоний борщ зі свинячими ребрами",
+          "quote": "подавати з часником🧄, салом та житнім хлібом 🍞",
+          "excluded": true
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": true,
+      "needs_review": false
+    },
+    {
+      "id": "7412140d40a8",
+      "name": "житній хліб",
+      "category": "Хліб та випічка",
+      "query": "житній хліб",
+      "unit": "",
+      "quantity_min": null,
+      "quantity_max": null,
+      "unknown_quantity": true,
+      "sources": [
+        {
+          "recipe": "Український червоний борщ зі свинячими ребрами",
+          "quote": "подавати з часником🧄, салом та житнім хлібом 🍞",
+          "excluded": true
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": true,
+      "needs_review": false
+    }
+  ],
+  "run_id": "9b7f58f3214e4a1297fb89bc82febae3"
+}

@@ -1,0 +1,30 @@
+test_budget_draft_does_not_change_recipe (test_core.Invariants.test_budget_draft_does_not_change_recipe) ... ok
+test_categories (test_core.Invariants.test_categories) ... ok
+test_duplicate_chat_uses_actual_list (test_core.Invariants.test_duplicate_chat_uses_actual_list) ... ok
+test_estimated_piece_count_preserved (test_core.Invariants.test_estimated_piece_count_preserved) ... ok
+test_fresh_mushroom (test_core.Invariants.test_fresh_mushroom) ... ok
+test_fresh_ribs_rank_before_more_expensive_frozen (test_core.Invariants.test_fresh_ribs_rank_before_more_expensive_frozen) ... ok
+test_invalid_multiplier (test_core.Invariants.test_invalid_multiplier) ... ok
+test_mismatch_does_not_price (test_core.Invariants.test_mismatch_does_not_price) ... ok
+test_no_piece_mass_conversion (test_core.Invariants.test_no_piece_mass_conversion) ... ok
+test_oil_is_not_chocolate (test_core.Invariants.test_oil_is_not_chocolate) ... ok
+test_onion_and_oil_aliases (test_core.Invariants.test_onion_and_oil_aliases) ... ok
+test_optional_excluded (test_core.Invariants.test_optional_excluded) ... ok
+test_package_parsing (test_core.Invariants.test_package_parsing) ... ok
+test_partial_unknown_adds_known_floor (test_core.Invariants.test_partial_unknown_adds_known_floor) ... ok
+test_prepared_food_rejected (test_core.Invariants.test_prepared_food_rejected) ... ok
+test_ready_food_rejected (test_core.Invariants.test_ready_food_rejected) ... ok
+test_serving_multiplier (test_core.Invariants.test_serving_multiplier) ... ok
+test_stock_insufficient (test_core.Invariants.test_stock_insufficient) ... ok
+test_units_merge (test_core.Invariants.test_units_merge) ... ok
+test_unknown_never_invented (test_core.Invariants.test_unknown_never_invented) ... ok
+test_unknown_pantry_one_pack_is_explicit (test_core.Invariants.test_unknown_pantry_one_pack_is_explicit) ... ok
+test_unknown_total_not_priced (test_core.Invariants.test_unknown_total_not_priced) ... ok
+test_weighted_price_not_100g (test_core.Invariants.test_weighted_price_not_100g) ... ok
+test_whole_package_cost (test_core.Invariants.test_whole_package_cost) ... ok
+test_wrong_estimate_basis_rejected (test_core.Invariants.test_wrong_estimate_basis_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.003s
+
+OK

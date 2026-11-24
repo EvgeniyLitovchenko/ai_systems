@@ -1,0 +1,436 @@
+{
+  "recipes": [
+    {
+      "title": "Піца з моцарелою та шинкою",
+      "servings": 4.0,
+      "ingredients": [
+        {
+          "id": "r1i1",
+          "name": "Борошно",
+          "query": "Борошно",
+          "quantity_min": 500.0,
+          "quantity_max": 500.0,
+          "unit": "г",
+          "source_quote": "500 г борошна",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": false,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Піца з моцарелою та шинкою"
+        },
+        {
+          "id": "r1i2",
+          "name": "Вода",
+          "query": "Вода",
+          "quantity_min": 250.0,
+          "quantity_max": 250.0,
+          "unit": "мл",
+          "source_quote": "250 мл теплої води",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": false,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Піца з моцарелою та шинкою"
+        },
+        {
+          "id": "r1i3",
+          "name": "Сухі дріжджі",
+          "query": "Сухі дріжджі",
+          "quantity_min": 7.0,
+          "quantity_max": 7.0,
+          "unit": "г",
+          "source_quote": "7 г сухих дріжджів",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": false,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Піца з моцарелою та шинкою"
+        },
+        {
+          "id": "r1i4",
+          "name": "Цукор",
+          "query": "Цукор",
+          "quantity_min": 1.0,
+          "quantity_max": 1.0,
+          "unit": "ч. л.",
+          "source_quote": "1 ч. л. цукру",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": false,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Піца з моцарелою та шинкою"
+        },
+        {
+          "id": "r1i5",
+          "name": "Сіль",
+          "query": "Сіль",
+          "quantity_min": 1.0,
+          "quantity_max": 1.0,
+          "unit": "ч. л.",
+          "source_quote": "1 ч. л. солі",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": false,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Піца з моцарелою та шинкою"
+        },
+        {
+          "id": "r1i6",
+          "name": "Оливкова олія",
+          "query": "Оливкова олія",
+          "quantity_min": 2.0,
+          "quantity_max": 2.0,
+          "unit": "ст. л.",
+          "source_quote": "2 ст. л. оливкової олії",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": false,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Піца з моцарелою та шинкою"
+        },
+        {
+          "id": "r1i7",
+          "name": "Томатний соус",
+          "query": "Томатний соус",
+          "quantity_min": 150.0,
+          "quantity_max": 150.0,
+          "unit": "г",
+          "source_quote": "150 г томатного соусу",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": false,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Піца з моцарелою та шинкою"
+        },
+        {
+          "id": "r1i8",
+          "name": "Моцарела",
+          "query": "Моцарела",
+          "quantity_min": 200.0,
+          "quantity_max": 200.0,
+          "unit": "г",
+          "source_quote": "200 г моцарели",
+          "notes": "Повторений рядок: враховано один раз, перевірте кількість.",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": true,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Піца з моцарелою та шинкою"
+        },
+        {
+          "id": "r1i9",
+          "name": "Шинка",
+          "query": "Шинка",
+          "quantity_min": 150.0,
+          "quantity_max": 150.0,
+          "unit": "г",
+          "source_quote": "150 г шинки",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": false,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Піца з моцарелою та шинкою"
+        },
+        {
+          "id": "r1i10",
+          "name": "Печериці",
+          "query": "Печериці",
+          "quantity_min": 150.0,
+          "quantity_max": 150.0,
+          "unit": "г",
+          "source_quote": "150 г печериць",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": false,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Піца з моцарелою та шинкою"
+        },
+        {
+          "id": "r1i11",
+          "name": "Італійські трави",
+          "query": "Італійські трави",
+          "quantity_min": 1.0,
+          "quantity_max": 1.0,
+          "unit": "ч. л.",
+          "source_quote": "1 ч. л. італійських трав",
+          "notes": "",
+          "optional": false,
+          "alternatives": [],
+          "needs_review": false,
+          "excluded": false,
+          "recipe_id": "r1",
+          "recipe_title": "Піца з моцарелою та шинкою"
+        }
+      ],
+      "id": "r1"
+    }
+  ],
+  "source_text": "Інгредієнти\n4 порції\n500 г борошна\n250 мл теплої води\n7 г сухих дріжджів\n1 ч. л. цукру\n1 ч. л. солі\n2 ст. л. оливкової олії\n150 г томатного соусу\n200 г моцарели\n150 г шинки\n150 г печериць\n1 ч. л. італійських трав\n200 г моцарели\nКроки\n45 хвилин\n1\nУ теплій воді розчиніть дріжджі та цукор, залиште на 5–10 хвилин.\nДодайте борошно, сіль та олію, замісіть м’яке тісто.\nНакрийте та залиште в теплому місці на 1 годину.\nРозділіть тісто на 6–8 частин і сформуйте круглі основи.\n\n2\nЗмастіть томатним соусом.\nДодайте терту моцарелу, нарізану шинку та гриби.\nПосипте італійськими травами.\nВипікайте при 220°C приблизно 12–15 хвилин до рум’яної скоринки\n\nПоради\nПорада: 🍕 Щоб тісто вийшло особливо ніжним, не додавайте забагато борошна під час замішування.\nГриби краще нарізати тонко, щоб вони встигли добре пропектися.\n",
+  "usage": {
+    "seconds": 7.721,
+    "model": "qwen3.5:4b",
+    "prompt_tokens": 1063,
+    "output_tokens": 1018,
+    "api_cost_uah": 0,
+    "cost_note": "Локальна модель: без оплати API; електроенергія й обладнання окремо не вимірювалися."
+  },
+  "created_at": "2026-11-20T21:42:59.807051+00:00",
+  "warnings": [
+    "Кількості без ваги, діапазони й альтернативи потрібно перевірити перед покупкою."
+  ],
+  "shopping": [
+    {
+      "id": "997d51094523",
+      "name": "печериці",
+      "category": "Овочі та зелень",
+      "query": "Печериці",
+      "unit": "г",
+      "quantity_min": 150.0,
+      "quantity_max": 150.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Піца з моцарелою та шинкою",
+          "quote": "150 г печериць",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": false
+    },
+    {
+      "id": "f9a3a3451be7",
+      "name": "шинка",
+      "category": "М’ясо та риба",
+      "query": "Шинка",
+      "unit": "г",
+      "quantity_min": 150.0,
+      "quantity_max": 150.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Піца з моцарелою та шинкою",
+          "quote": "150 г шинки",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": false
+    },
+    {
+      "id": "e02c9e1225aa",
+      "name": "моцарела",
+      "category": "Молочні продукти та яйця",
+      "query": "Моцарела",
+      "unit": "г",
+      "quantity_min": 200.0,
+      "quantity_max": 200.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Піца з моцарелою та шинкою",
+          "quote": "200 г моцарели",
+          "excluded": false
+        }
+      ],
+      "notes": [
+        "Повторений рядок: враховано один раз, перевірте кількість."
+      ],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": true
+    },
+    {
+      "id": "de459346a6c7",
+      "name": "борошно",
+      "category": "Бакалія",
+      "query": "Борошно",
+      "unit": "г",
+      "quantity_min": 500.0,
+      "quantity_max": 500.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Піца з моцарелою та шинкою",
+          "quote": "500 г борошна",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": false
+    },
+    {
+      "id": "766c6a10dc67",
+      "name": "сухі дріжджі",
+      "category": "Бакалія",
+      "query": "Сухі дріжджі",
+      "unit": "г",
+      "quantity_min": 7.0,
+      "quantity_max": 7.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Піца з моцарелою та шинкою",
+          "quote": "7 г сухих дріжджів",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": false
+    },
+    {
+      "id": "92af2dd492e7",
+      "name": "цукор",
+      "category": "Бакалія",
+      "query": "Цукор",
+      "unit": "ч. л.",
+      "quantity_min": 1.0,
+      "quantity_max": 1.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Піца з моцарелою та шинкою",
+          "quote": "1 ч. л. цукру",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": false
+    },
+    {
+      "id": "9122540191e5",
+      "name": "олія оливкова",
+      "category": "Олія та соуси",
+      "query": "Оливкова олія",
+      "unit": "ст. л.",
+      "quantity_min": 2.0,
+      "quantity_max": 2.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Піца з моцарелою та шинкою",
+          "quote": "2 ст. л. оливкової олії",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": false
+    },
+    {
+      "id": "60f1d766a0a0",
+      "name": "томатний соус",
+      "category": "Олія та соуси",
+      "query": "Томатний соус",
+      "unit": "г",
+      "quantity_min": 150.0,
+      "quantity_max": 150.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Піца з моцарелою та шинкою",
+          "quote": "150 г томатного соусу",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": false
+    },
+    {
+      "id": "6fab09bcf199",
+      "name": "сіль",
+      "category": "Спеції",
+      "query": "Сіль",
+      "unit": "ч. л.",
+      "quantity_min": 1.0,
+      "quantity_max": 1.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Піца з моцарелою та шинкою",
+          "quote": "1 ч. л. солі",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": false
+    },
+    {
+      "id": "fa4c7e109e5b",
+      "name": "італійські трави",
+      "category": "Спеції",
+      "query": "Італійські трави",
+      "unit": "ч. л.",
+      "quantity_min": 1.0,
+      "quantity_max": 1.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Піца з моцарелою та шинкою",
+          "quote": "1 ч. л. італійських трав",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": false
+    },
+    {
+      "id": "570178c1ee7a",
+      "name": "вода",
+      "category": "Вода та напої",
+      "query": "Вода",
+      "unit": "мл",
+      "quantity_min": 250.0,
+      "quantity_max": 250.0,
+      "unknown_quantity": false,
+      "sources": [
+        {
+          "recipe": "Піца з моцарелою та шинкою",
+          "quote": "250 мл теплої води",
+          "excluded": false
+        }
+      ],
+      "notes": [],
+      "alternatives": [],
+      "excluded": false,
+      "needs_review": false
+    }
+  ],
+  "run_id": "dfe89d2794044a7baa6974169b90a42c"
+}
